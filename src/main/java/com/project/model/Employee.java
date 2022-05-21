@@ -1,9 +1,12 @@
 package com.project.model;
 
+import lombok.Data;
+
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import java.util.Date;
 
+@Data
 @Entity
 @Table(name = "employee")
 public class Employee {
