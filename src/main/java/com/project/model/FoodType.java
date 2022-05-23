@@ -6,9 +6,9 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name = "employee_x_company")
-public class EmployeeXCompany {
-    private static final String SEQ = "employee_x_company_id_seq";
+@Table(name = "food_type")
+public class FoodType {
+    private static final String SEQ = "food_type_id_seq";
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = SEQ)
@@ -16,9 +16,6 @@ public class EmployeeXCompany {
     @Column(name = "id", nullable = false)
     private Integer id;
 
-    @Column(name = "employee_id", nullable = false)
-    private Employee employee;
-
-    @Column(name = "company_id", nullable = false)
-    private Company company;
+    @Column(name = "food_type", nullable = false)
+    private String foodType;
 }
