@@ -10,8 +10,9 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 public class CompanyService {
+    private final CompanyRepository companyRepository;
 
     public List<Company> getListOfCompanies() {
-        return CompanyRepository.findAll();
+        return null;
     }
 }
